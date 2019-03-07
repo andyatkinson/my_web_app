@@ -8,8 +8,8 @@ services:
       args:
         - PYTHON_VERSION=3.7-slim
     image: aatkinson/flask-app:1.0
-    environment:
-      - FLASK_ENV=development
+    env_file:
+      - .env.txt
     ports:
       - 80:5000
     networks:
