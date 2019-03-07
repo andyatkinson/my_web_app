@@ -63,6 +63,7 @@ Start more than one container for a service
 
 ## Volumes
 
+`docker volume ls`
 
 
 ## Networks

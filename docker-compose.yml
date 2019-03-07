@@ -14,7 +14,11 @@ services:
       - 80:5000
     networks:
       - mynet
-
+    volumes:
+      - mydata:/data
 
 networks:
   mynet:
+
+volumes:
+  mydata:
