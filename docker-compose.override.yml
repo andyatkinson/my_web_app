@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  app:
+    container_name: myappcontainer
+    ports:
+      - 5000:5000
