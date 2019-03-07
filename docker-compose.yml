@@ -1,0 +1,10 @@
+version: '3' # version is the docker compose file format
+
+services:
+  app:
+    build: . # look for Dockerfile in current directory
+    image: aatkinson/flask-app:1.0
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - 5000:5000
