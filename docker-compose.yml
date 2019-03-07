@@ -2,7 +2,11 @@ version: '3' # version is the docker compose file format
 
 services:
   app:
-    build: . # look for Dockerfile in current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PYTHON_VERSION=3.7-slim
     image: aatkinson/flask-app:1.0
     environment:
       - FLASK_ENV=development
