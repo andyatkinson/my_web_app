@@ -12,3 +12,9 @@ services:
       - FLASK_ENV=development
     ports:
       - 80:5000
+    networks:
+      - mynet
+
+
+networks:
+  mynet:

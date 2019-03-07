@@ -54,3 +54,18 @@ Port mapping will not be intact in this case
 
 Can change port mapping, e.g. from 5000:5000 to 80:5000, and do another `docker-compose up` and everything is updated.
 Can do a `curl localhost` and get the desired response on port 80
+
+## Scaling
+
+Start more than one container for a service
+
+`docker-compose up --scale app=3`
+
+## Volumes
+
+
+
+## Networks
+
+`docker network ls`
+`docker network prune`
