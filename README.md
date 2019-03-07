@@ -35,3 +35,22 @@ Refer to the container by the name of the service
 Secrets are used in Docker Swarm
 
 dockerfile option within docker-compose build section
+
+`docker-compose ps`
+`docker-compose logs -f`
+`docker-compose stop` # does not remove containers
+`docker-compose start`
+`docker-compose restart`
+
+## Execute redis query on redis-cli, from within docker redis
+
+`docker-compose exec redis redis-cli lrange students 0 -1`
+
+`docker-compose exec app /bin/bash` # start up a shell
+
+`docker-compose run...` # starts up a new container, as opposed to exec uses a running container
+
+Port mapping will not be intact in this case
+
+Can change port mapping, e.g. from 5000:5000 to 80:5000, and do another `docker-compose up` and everything is updated.
+Can do a `curl localhost` and get the desired response on port 80
