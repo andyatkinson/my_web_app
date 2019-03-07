@@ -1,4 +1,4 @@
-Docker intro
+## Docker intro
 
 https://medium.com/@kelvin_sp/docker-introduction-what-you-need-to-know-to-start-creating-containers-8ffaf064930a
 
@@ -12,7 +12,9 @@ https://medium.freecodecamp.org/docker-entrypoint-cmd-dockerfile-best-practices-
 `./entrypoint.sh`
 
 
-Docker Compose
+## Docker Compose
+
+https://www.youtube.com/watch?v=4EqysCR3mjo
 
 Build and run multi-container apps. One form is Docker Compose file, also `docker-compose` command.
 
