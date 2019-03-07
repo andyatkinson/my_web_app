@@ -70,3 +70,7 @@ Start more than one container for a service
 
 `docker network ls`
 `docker network prune`
+
+Docker compose `push` to push to a repository
+
+Docker compose `pull` to download all the images necessary. (Docker playground)
